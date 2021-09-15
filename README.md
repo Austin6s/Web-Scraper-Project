@@ -20,7 +20,7 @@ I started this project by first using bs4 and the requests package to extract th
 
 I only used the pandas package in this project to check what I was writing to the csv file without having to open it each time I ran my code.
 
-###Project Objectives
+### Project Objectives
 1. Web scrape an ecommerce site to collect the desired data from a product.
 2. Clean that data into a more desirable format.
 3. Export that data into a csv file.
