@@ -14,9 +14,9 @@ python --version 3.8
   smtplib
 
 ### Description
-This project was done using Python 3.8 in Jupyter Notebooks. In this project, I utilized the BeautifulSoup package to web scrape an ecommerce website to collect a few data points on a product I am watching and then alert me via email when the price has dropped below my target price range.
+This project was done using Python 3.8 in Jupyter Notebooks. In this project, I utilized the BeautifulSoup package to web scrape an ecommerce website to collect a few data points on a product I am watching; then alert me via email when the price has dropped below my target price range.
 
-I started this project by first using bs4 and the requests package to extract the data that I desired to monitor; which in this case was: date, title (of the product), price, and rating (out of 5 stars). I then cleaned and exported that data into a csv dataset using the Python csv package. Then I and built a function that uses a timer to automatically initiate another web scrape every 24 hours (can easily be changed to any time designation) and append the csv file with the updated data from that day. For convenience, I used the smtplib package to write a function that would send me an email only if the price of the product dropped below my desired price range.
+I started this project by first using bs4 (from the BeautifulSoup package) and the requests package to extract the data that I desired to monitor; which in this case was: date, title (of the product), price, and rating (out of 5 stars). I then cleaned and exported that data into a csv dataset using the Python csv package. Then I built a function that uses a timer to automatically initiate another web scrape every 24 hours (can easily be changed to any time designation) and append the csv file with the updated data from that day. For convenience, I used the smtplib package to write a function that would send me an email only if the price of the product dropped below my desired price range.
 
 I only used the pandas package in this project to check what I was writing to the csv file without having to open it each time I ran my code.
 
